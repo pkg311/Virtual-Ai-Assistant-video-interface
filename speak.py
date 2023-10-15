@@ -11,14 +11,14 @@ from pydub.playback import play
 from gtts import gTTS
 
 # Set OpenAI API key
-openai.api_key = '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'
+openai.api_key = '### Enter your open AI API KEY ####'
 
 # Initialize Streamlit UI
 st.title("Atech - Voice Assistant")
 st.text("Welcome to Atech. How may I assist you? Say 'Hello' to start, and 'Goodbye' to end the conversation.")
-lang = 'en'
-gender = 'female'
-video_path = r"C:\Users\monil\Downloads\1696152000434.mp4"  # Replace with the path to your video file
+lang = 'en' # select your language 
+gender = 'female' # select Voice Gender
+video_path = r"Video Path"  # Replace with the path to your video file
 
 def generate_response(prompt):
     response = openai.Completion.create(
